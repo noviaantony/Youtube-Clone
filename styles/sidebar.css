@@ -1,0 +1,35 @@
+.sidebar {
+  position: fixed;
+  background-color: white;
+  left: 0;
+  bottom: 0;
+  top: 55px;
+  width: 72px;
+  z-index: 200;
+}
+
+
+
+.sidebar_link {
+  height: 74px;
+  transition: background-color 0.15s;
+  display: flex;
+  justify-content: center; /* horizontal allignment */
+  align-items: center; /* vertical allignment */
+  flex-direction: column; /* this is abit confusing, but the two above parameters are kinda swapped when ur flex direction is a column*/
+}
+
+.sidebar_link:hover {
+  background-color: rgb(235,235,235);
+}
+
+.sidebar_link img {
+  height: 24px;
+}
+
+.sidebar_link div {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  margin-top: 7px;
+
+}

@@ -1,0 +1,22 @@
+p {
+  font-family: Roboto, Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+body {
+  
+  /* color: red; 
+  css follows a priority
+  - if i uncomment only some become red
+  - in video author and stats, we set in in video.css and bc its more spec it 
+  takes priority (css specificity) 
+  */ 
+
+  margin: 0;
+  padding-top: 80px;
+  padding-left: 96px;
+  padding-right: 24px;
+  background-color: rgb(248, 248, 248);
+}

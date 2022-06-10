@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Novia's Youtube Clone</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/video.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+    
+</head>
+
+<body>
+
+  <header class = "header">
+    <div class = "left_section">
+      <img class = "hamburger_menu" src="icons/hamburger-menu.svg" alt="">
+      <img class = "youtube_logo" src="icons/youtube-logo.svg" alt="">
+    </div>
+    <div class = "middle_section">
+      <input class = "searchbar" type="text" placeholder="Search">
+      <button class = "search_button">
+        <img class = "search_icon" src="icons/search.svg" alt="">
+        <div class = "tooltip">Search</div>
+      </button>
+      <button class = "voicesearch_button">
+        <img class = "voicesearch_icon" src="icons/voice-search-icon.svg" alt="">
+        <div class = "tooltip">Search with your voice</div>
+      </button>
+      
+      
+    </div>
+    <div class = "right_section">
+
+      <div class = "upload_icon_container">
+        <img class ="upload_icon" src="icons/upload.svg" alt="">
+        <div class = "tooltip">Create</div>
+      </div>
+
+      <div class = "youtube_apps_container" >
+        <img class = "youtubeapps_icon" src="icons/youtube-apps.svg" alt="">
+        <div class = "tooltip">Youtube apps</div>
+      </div>
+
+      <div class = "notifications_container">
+        <div class = "notifications_icon_container">
+          <img class = "notifications_icon" src="icons/notifications.svg" alt="">
+          <div class = "notifications_count">3</div>
+        </div>
+        <div class = "tooltip">Notifications</div> 
+
+      </div>
+
+      <img class = "currentuser_picture" src="channels/my-channel.jpeg" alt="">
+
+    </div>
+  </header>
+
+  <nav class = "sidebar">
+
+    <div class = "sidebar_link">
+      <img class = "home_icon" src="icons/home.svg" alt="">
+      <div>Home</div>
+    </div>
+
+    <div class = "sidebar_link">
+      <img class = "explore_icon" src="icons/explore.svg" alt="">
+      <div>Explore</div>
+    </div>
+
+    <div class = "sidebar_link">
+      <img class = "subscription_icon" src="icons/subscriptions.svg" alt="">
+      <div>Subscriptions</div>
+      
+    </div>
+
+    <div class = "sidebar_link">
+      <img class = "originals_icon" src="icons/originals.svg" alt="">
+      <div>Originals</div>
+      
+    </div>
+
+    <div class = "sidebar_link">
+      <img class = "youtubemusic_icon" src="icons/youtube-music.svg" alt="">
+      <div>Youtube Music</div>
+      
+    </div>
+
+    <div class = "sidebar_link">
+      <img class = "library_icon" src="icons/library.svg" alt="">
+      <div>Library</div>
+      
+  </nav>
+    
+  <! Inheritence >
+
+    <!
+    whatever i give "video_grid" will be passed to all video_previews, but 
+    this only applies to some properties (mostly text properties)
+    >
+  
+  <! some divs should be replaced sementic elem like header and nav for search engine purposes. main should contain the main elements in >
+
+  <main class = "video_grid">
+
+    <section class = "video_preview">
+      <div class = "thumbnail_row"> <!relative element, img cant be a relative element>
+        <img class = "thumbnail" src="thumbnails/thumbnail-1.webp" alt="thumbnail-1">
+        <div class = "video_time">14:20</div>
+      </div>  
+      <div class = "video_info_grid">
+        <div class = "channel_picture">
+          <img class = "profile_picture" src="channels/channel-1.jpeg" alt="">
+        </div> 
+        <div class = "video_info">
+          <p class = "video_title">
+            Talking Tech and AI with Google CEO Sundar Pichai!
+          </p>
+          <p class = "video_author">
+            Marques Brownlee
+          </p>       
+          <p class = "video_stats">
+            3.4M views &#183; 6 months ago
+          </p>
+        </div>  
+      </div>   
+    </section>
+
+    <section class = "video_preview">
+      <div class = "thumbnail_row">
+        <img class = "thumbnail" src="thumbnails/thumbnail-2.webp" alt="thumbnail-1">
+        <div class = "video_time">08:22</div>
+      </div>  
+      <div class = "video_info_grid">
+        <div class = "channel_picture">
+          <img class = "profile_picture" src="channels/channel-2.jpeg" alt="">
+        </div> 
+        <div class = "video_info">
+          <p class = "video_title">
+            Try Not To Laugh Challenge #9
+          </p>
+          <p class = "video_author">
+            Markiplier
+          </p>       
+          <p class = "video_stats">
+            19M views &#183; 4 years ago
+          </p>
+        </div>  
+      </div>   
+    </section>
+
+    <section class = "video_preview">
+      <div class = "thumbnail_row">
+        <img class = "thumbnail" src="thumbnails/thumbnail-6.webp" alt="thumbnail-1">
+        <div class = "video_time">06:18</div>
+      </div>  
+      <div class = "video_info_grid">
+        <div class = "channel_picture">
+          <img class = "profile_picture" src="channels/channel-6.jpeg" alt="">
+        </div> 
+        <div class = "video_info">
+          <p class = "video_title">
+            Hissing Feral Cat Falls In Love With The Guy Who Rescued Him | The Dodo Cat Crazy
+          </p>
+          <p class = "video_author">
+            The Dodo
+          </p>       
+          <p class = "video_stats">
+            5.2M views &#183; 11 months ago
+          </p>
+        </div>  
+      </div>   
+    </section>
+
+    <section class = "video_preview">
+      <div class = "thumbnail_row">
+        <img class = "thumbnail" src="thumbnails/thumbnail-7.webp" alt="thumbnail-1">
+        <div class = "video_time">5:47</div>
+      </div>  
+      
+      <div class = "video_info_grid">
+        <div class = "channel_picture">
+          <img class = "profile_picture" src="channels/channel-7.jpeg" alt="">
+        </div> 
+        <div class = "video_info">
+          <p class = "video_title">
+            What Your Cat's Sleeping Position Reveals About Their Health and Personality
+          </p>
+          <p class = "video_author">
+            Jaw-Dropping Facts
+
+          </p>       
+          <p class = "video_stats">
+            8.2M views &#183; 2 years ago
+          </p>
+        </div>  
+      </div>   
+    </section>
+
+    <section class = "video_preview">
+      <div class = "thumbnail_row">
+        <img class = "thumbnail" src="thumbnails/thumbnail-8.webp" alt="">
+        <div class = "video_time">22:22</div>
+      </div>  
+      <div class = "video_info_grid">
+        <div class = "channel_picture">
+          <img class = "profile_picture" src="channels/channel-8.jpeg" alt="">
+        </div> 
+        <div class = "video_info">
+          <p class = "video_title">
+            I Survived in Bangkok with $1 for 24 Hours
+          </p>
+          <p class = "video_author">
+            Brett Conti
+          </p>       
+          <p class = "video_stats">
+            105K views &#183; 2 months ago
+          </p>
+        </div>  
+      </div>   
+    </section>
+
+    <section class = "video_preview">
+      <div class = "thumbnail_row">
+        <img class = "thumbnail" src="thumbnails/thumbnail-9.webp" alt="">
+        <div class = "video_time">02:13</div>
+      </div> 
+      <div class = "video_info_grid">
+        <div class = "channel_picture">
+          <img class = "profile_picture" src="channels/channel-9.jpeg" alt="">
+        </div> 
+        <div class = "video_info">
+          <p class = "video_title">
+            Spiderhead | Chris Hemsworth | Official Trailer | Netflix
+          </p>
+          <p class = "video_author">
+            Netflix
+          </p>       
+          <p class = "video_stats">
+            5M views &#183; 11 days ago
+          </p>
+        </div>  
+      </div>   
+    </section>
+
+    <section class = "video_preview">
+      <div class = "thumbnail_row">
+        <img class = "thumbnail" src="thumbnails/thumbnail-10.webp" alt="">
+        <div class = "video_time">05:41</div>
+      </div>  
+      <div class = "video_info_grid">
+        <div class = "channel_picture">
+          <img class = "profile_picture" src="channels/channel-10.jpeg" alt="">
+        </div> 
+        <div class = "video_info">
+          <p class = "video_title">
+            NO GUIDANCE - Chris Brown Ft. Drake | Choreography by Alexander Chung
+          </p>
+          <p class = "video_author">
+            Alexander Chung
+          </p>       
+          <p class = "video_stats">
+            8.1M views &#183; 2 years ago
+          </p>
+        </div>  
+      </div>   
+    </section>
+
+    <section class = "video_preview">
+      <div class = "thumbnail_row">
+        <img class = "thumbnail" src="thumbnails/thumbnail-11.webp" alt="">
+        <div class = "video_time">03:03</div>
+      </div>  
+      <div class = "video_info_grid">
+        <div class = "channel_picture">
+          <img class = "profile_picture" src="channels/channel-11.jpeg" alt="">
+        </div> 
+        <div class = "video_info">
+          <p class = "video_title">
+            LE SSERAFIM FEARLESS OFFICIAL M/V
+          </p>
+          <p class = "video_author">
+            HYBE LABELS
+          </p>       
+          <p class = "video_stats">
+            69M views &#183; 2 weeks ago
+          </p>
+        </div>  
+      </div>   
+    </section>
+
+    <section class = "video_preview">
+      <div class = "thumbnail_row">
+        <img class = "thumbnail" src="thumbnails/thumbnail-12.webp" alt="">
+        <div class = "video_time">14:38</div>
+        
+      </div>  
+      <div class = "video_info_grid">
+        <div class = "channel_picture">
+          <img class = "profile_picture" src="channels/channel-12.jpeg" alt="">
+        </div> 
+        <div class = "video_info">
+          <p class = "video_title">
+            22 WAYS to customize your macbook (organization + customization tips and tricks)
+          </p>
+          <p class = "video_author">
+            Raya Maurelle
+          </p>       
+          <p class = "video_stats">
+            552K views &#183; 4 months ago
+          </p>
+        </div>  
+      </div>   
+    </section>
+
+    <section class = "video_preview">
+      <div class = "thumbnail_row">
+        <img class = "thumbnail" src="thumbnails/thumbnail-13.webp" alt="">
+        <div class = "video_time">11:24</div>
+        
+      </div>  
+      <div class = "video_info_grid">
+        <div class = "channel_picture">
+          <img class = "profile_picture" src="channels/channel-13.jpeg" alt="">
+        </div> 
+        <div class = "video_info">
+          <p class = "video_title">
+            Cold Blooded - Jessi (제시) | 3 Dancers Choreograph To The Same Song
+          </p>
+          <p class = "video_author">
+            STEEZY
+          </p>       
+          <p class = "video_stats">
+            564K views &#183; 1 month ago
+          </p>
+        </div>  
+      </div>   
+    </section>
+
+    <section class = "video_preview">
+      <div class = "thumbnail_row">
+        <img class = "thumbnail" src="thumbnails/thumbnail-14.webp" alt="">
+        <div class = "video_time">11:24</div>
+        
+      </div>  
+      <div class = "video_info_grid">
+        <div class = "channel_picture">
+          <img class = "profile_picture" src="channels/channel-14.jpeg" alt="">
+        </div> 
+        <div class = "video_info">
+          <p class = "video_title">
+            What I Spend in a Week as a 23 Year Old in NYC
+          </p>
+          <p class = "video_author">
+            Elliot Choy
+          </p>       
+          <p class = "video_stats">
+            272K views &#183; 7 days ago
+          </p>
+        </div>  
+      </div>   
+    </section>
+
+    <section class = "video_preview">
+      <div class = "thumbnail_row">
+        <img class = "thumbnail" src="thumbnails/thumbnail-15.jpeg" alt="">
+        <div class = "video_time">11:24</div>
+        
+      </div>  
+      <div class = "video_info_grid">
+        <div class = "channel_picture">
+          <img class = "profile_picture" src="channels/channel-15.jpeg" alt="">
+        </div> 
+        <div class = "video_info">
+          <p class = "video_title">
+            Day in the Life of a Ragdoll Cat
+          </p>
+          <p class = "video_author">
+            Aaron Zimmermann
+          </p>       
+          <p class = "video_stats">
+            87K views &#183; 10 months ago
+          </p>
+        </div>  
+      </div>   
+    </section>
+
+  </main>
+
+</body>
+
+</html>
